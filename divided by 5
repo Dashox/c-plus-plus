@@ -1,0 +1,29 @@
+#include <iostream>
+#include <cstdlib>
+#include <time.h>
+
+using namespace std;
+
+int main()
+{
+   int tablica[10];
+   srand(time(NULL));
+   cout<<"Tablica: ";
+
+   for (int i=0; i<10; i++)
+   {
+   	tablica[i]=rand()%200 - 100;
+   	cout<<tablica[i]<<"	";
+   }
+
+
+
+   cout<<endl<<endl<<"Liczby ujemne podzielne przez 5: ";
+   for (int i=0; i<10;i++)
+   {
+   		if(tablica[i]%5==0) //jeśli chcemy żeby były to liczby TYLKO ujemne wystarczy dodać  && tablica[i]<0 w nawiasie 
+   			cout<<tablica[i]<<" ";
+   }
+return 0;
+
+}
