@@ -1,0 +1,52 @@
+#include <iostream>
+#include <cstdlib>
+#include <time.h>
+
+using namespace std;
+
+int main()
+{
+	
+	int x;
+	int y;
+	int z;
+	int liczba;
+	
+	cout<<"Podaj zakres liczb." << endl;
+	cout<<"Od: ";
+	cin>>x;
+	cout<<"Do: ";
+	cin>>y;
+	cout<<"Zakres liczb:"<<endl;
+
+	int*tab=new int[y-x+1];
+	for(int i=0;i<y-x+1;i++)
+	{
+		tab[i]=x+i;
+		cout<<tab[i]<<" ";
+	}
+	cout<<"\n""Liczby pierwsze z podanego przedzialu to: "<<endl;
+    if(y<2)
+    {
+        cout<<"Brak liczb pierwszych"<<endl;
+        exit(0);
+    }
+    if(x<=2)
+        cout<<"2 ";
+      x=3;
+   for(int i=x;i<=y;i++)
+   {
+      z=0;
+      for(int j=2;j<i;j++)
+      {
+         if((i%j)==0)
+         {
+            z=1;
+            break;
+         }
+      }
+      if(z==0)
+         cout<<i<<" ";
+   }
+   return 0;
+}		
