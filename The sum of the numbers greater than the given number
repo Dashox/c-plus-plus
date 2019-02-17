@@ -1,0 +1,38 @@
+#include <iostream>
+#include <cstdlib>
+#include <time.h>
+
+using namespace std;
+
+int main()
+{ 
+   int array[10];
+	int n;
+	int	sum=0;
+	int m;
+	int	licznik=0;
+   srand(time(NULL));
+   cout<<"Array: ";
+
+   for (int i=0; i<10; i++)
+   {
+   	array[i]=rand()%200 - 100;
+   	cout<<array[i]<<"	";
+   }
+
+
+   cout<<"\n""State your number: ";
+   cin>>n;
+   for (int i=0; i<10;i++)
+   {
+   if(array[i]>n)
+   	{
+   		sum+=array[i];
+   	}
+   	else
+   	sum+=0;
+   }
+   	cout<<"\n""The sum of the numbers greater than the given number is : "<<sum;
+   	
+return 0;
+}
