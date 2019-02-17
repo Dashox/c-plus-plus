@@ -1,0 +1,38 @@
+#include <iostream>
+#include <cstdlib>
+#include <time.h>
+
+using namespace std;
+
+int main(){
+
+	int a;
+	int	b;
+	int high;
+	int	low;
+	
+	cout<<"Szukanie najwiekszego wspolnego dzielnika dwoch liczb"<<endl;
+	cout<<"Podaj pierwsza liczbe: ";
+	cin>>a;
+	cout<<"Podaj druga liczbe: ";
+	cin>>b;
+	if(a>b)
+    {
+        high=a;
+        low=b;
+    }
+    else
+    {
+        high=b;
+        low=a;
+    }
+	for(int i=high;i>0;i--)
+    {
+        if(a%i==0 && b%i==0)
+        {
+            cout<<endl<<"NWD podanych liczb to "<<i<<endl;
+            break;
+        }
+    }
+    return 0;
+}
