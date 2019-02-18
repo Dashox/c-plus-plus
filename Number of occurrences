@@ -6,30 +6,30 @@ using namespace std;
 
 int main()
 {
-   int tablica[10];
+   int array[10];
 	int n;
-	int	sum=0;
+	int sum=0;
 	int m;
-	int	licznik=0;
+	int counter=0;
    srand(time(NULL));
-   cout<<"Tablica: ";
+   cout<<"Array: ";
 
    for (int i=0; i<10; i++)
    {
-   	tablica[i]=rand()%200 - 100;
-   	cout<<tablica[i]<<"	";
+   	array[i]=rand()%200 - 100;
+   	cout<<array[i]<<"	";
    }
 
-   	cout<<"\n"<<"Podaj liczbe: ";
+   	cout<<"\n"<<"State your number: ";
    cin>>m;
    for (int i=0; i<10;i++)
    {
-   if(tablica[i]==m)
+   if(array[i]==m)
    	{
-   		licznik++;
+   		counter++;
    	}
    }
-   cout<<"Liczba wystapienia podanej liczby: "<<licznik<<endl;
+   cout<<"Number of occurrences: "<<counter<<endl;
    
    
    return 0;
