@@ -11,10 +11,10 @@ int main(){
 	int high;
 	int	low;
 	
-	cout<<"Szukanie najwiekszego wspolnego dzielnika dwoch liczb"<<endl;
-	cout<<"Podaj pierwsza liczbe: ";
+	cout<<"Searching for greatest common divisor"<<endl;
+	cout<<"State first number: ";
 	cin>>a;
-	cout<<"Podaj druga liczbe: ";
+	cout<<"State second number: ";
 	cin>>b;
 	if(a>b)
     {
@@ -30,7 +30,7 @@ int main(){
     {
         if(a%i==0 && b%i==0)
         {
-            cout<<endl<<"NWD podanych liczb to "<<i<<endl;
+            cout<<endl<<"Greatest common divisor of those numbers is "<<i<<endl;
             break;
         }
     }
