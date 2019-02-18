@@ -6,23 +6,23 @@ using namespace std;
 
 int main()
 {
-   int tablica[10];
+   int array[10];
    srand(time(NULL));
-   cout<<"Tablica: ";
+   cout<<"Array: ";
 
    for (int i=0; i<10; i++)
    {
-   	tablica[i]=rand()%200 - 100;
-   	cout<<tablica[i]<<"	";
+   	array[i]=rand()%200 - 100;
+   	cout<<array[i]<<"	";
    }
 
 
 
-   cout<<endl<<endl<<"Liczby ujemne podzielne przez 5: ";
+   cout<<endl<<endl<<"Numbers divisible by 5: ";
    for (int i=0; i<10;i++)
    {
-   		if(tablica[i]%5==0) //jeśli chcemy żeby były to liczby TYLKO ujemne wystarczy dodać  && tablica[i]<0 w nawiasie 
-   			cout<<tablica[i]<<" ";
+   		if(array[i]%5==0) //jeśli chcemy żeby były to liczby TYLKO ujemne wystarczy dodać  && tablica[i]<0 w nawiasie 
+   			cout<<array[i]<<" ";
    }
 return 0;
 
