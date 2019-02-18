@@ -6,20 +6,20 @@ using namespace std;
 
 int main()
 {
-   	string tekst;
+   	string text;
 	int counter=0;
-	cout<<"Wpisz dowolny tekst z uzyciem tylko malych liter: "<<endl;
-	getline(cin, tekst);
-	cout<<"Statystyka wystepowania danych liter"<<endl<<endl;
+	cout<<"Enter any text using only lowercase letters: "<<endl;
+	getline(cin, text);
+	cout<<"Statistics of occurrence of given letters"<<endl<<endl;
 	for(int i=97;i<=122;i++)
     {
-        for(int j=0;j<tekst.size();j++)
+        for(int j=0;j<text.size();j++)
         {
-            if(tekst[j]==(char)i)
+            if(text[j]==(char)i)
                 counter++;
         }
         if(counter>0)
-            cout<<"Litera "<<(char)i<<" wystepuje "<<counter<<" razy"<<endl;
+            cout<<"Letter "<<(char)i<<" occurs "<<counter<<" times"<<endl;
             counter=0;
     }
 
