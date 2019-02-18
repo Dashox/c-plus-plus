@@ -10,14 +10,14 @@ int main()
 	int x;
 	int y;
 	int z;
-	int liczba;
+	int number;
 	
-	cout<<"Podaj zakres liczb." << endl;
-	cout<<"Od: ";
+	cout<<"enter the range of numbers." << endl;
+	cout<<"From: ";
 	cin>>x;
-	cout<<"Do: ";
+	cout<<"To: ";
 	cin>>y;
-	cout<<"Zakres liczb:"<<endl;
+	cout<<"Range of numbers:"<<endl;
 
 	int*tab=new int[y-x+1];
 	for(int i=0;i<y-x+1;i++)
@@ -25,10 +25,10 @@ int main()
 		tab[i]=x+i;
 		cout<<tab[i]<<" ";
 	}
-	cout<<"\n""Liczby pierwsze z podanego przedzialu to: "<<endl;
+	cout<<"\n""Prime numbers with a condition provided are: "<<endl;
     if(y<2)
     {
-        cout<<"Brak liczb pierwszych"<<endl;
+        cout<<"No prime numbers"<<endl;
         exit(0);
     }
     if(x<=2)
